@@ -1,0 +1,197 @@
+
+/* ========================= */
+/* CENTRO DE IMPRESIONES */
+/* ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #e3f2fd, #b3e5fc, #ffffff);
+
+    margin: 0;
+    padding: 30px;
+
+    text-align: center;
+}
+
+
+/* ========================= */
+/* CAJA DEL FORMULARIO */
+/* ========================= */
+
+.registro {
+    background-color: white;
+
+    width: 430px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 3px solid #0288d1;
+
+    box-shadow: 0px 8px 20px #90a4ae;
+}
+
+
+/* ========================= */
+/* TITULO */
+/* ========================= */
+
+.registro h1 {
+    color: #01579b;
+
+    font-size: 32px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================= */
+/* SUBTITULO */
+/* ========================= */
+
+.registro h2 {
+    color: #0288d1;
+
+    font-size: 26px;
+}
+
+
+/* ========================= */
+/* ETIQUETAS */
+/* ========================= */
+
+label {
+    color: #01579b;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+
+/* ========================= */
+/* CAMPOS DE TEXTO */
+/* ========================= */
+
+input,
+select {
+
+    width: 90%;
+
+    padding: 12px;
+
+    margin-top: 7px;
+
+    border: 2px solid #81d4fa;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    background-color: #f5fbff;
+
+    outline: none;
+}
+
+
+/* CUANDO SELECCIONAS EL CAMPO */
+
+input:focus,
+select:focus {
+
+    border-color: #0288d1;
+
+    box-shadow: 0px 0px 8px #81d4fa;
+}
+
+
+/* ========================= */
+/* BOTON PRINCIPAL */
+/* ========================= */
+
+.mi-boton1 {
+
+    background: linear-gradient(135deg, #01579b, #0288d1);
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 30px;
+
+    margin: 8px;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0px 5px 10px #90a4ae;
+
+    transition: 0.3s;
+}
+
+
+/* EFECTO DEL BOTON */
+
+.mi-boton1:hover {
+
+    background: linear-gradient(135deg, #0288d1, #00acc1);
+
+    transform: translateY(-4px) scale(1.05);
+
+    box-shadow: 0px 8px 15px #607d8b;
+}
+
+
+/* ========================= */
+/* SEGUNDO BOTON */
+/* ========================= */
+
+.mi-boton2 {
+
+    background: linear-gradient(135deg, #00838f, #00acc1);
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 30px;
+
+    margin: 8px;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0px 5px 10px #90a4ae;
+
+    transition: 0.3s;
+}
+
+
+/* EFECTO SEGUNDO BOTON */
+
+.mi-boton2:hover {
+
+    background: linear-gradient(135deg, #006064, #00838f);
+
+    transform: translateY(-4px) scale(1.05);
+}
+
+
+/* ========================= */
+/* LINEAS */
+/* ==============*
+
