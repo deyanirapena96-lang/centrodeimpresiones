@@ -1,0 +1,150 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf8ff;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #005b96;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+header h2 {
+    margin: 5px;
+    color: white;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: #008cba;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 22px;
+    font-weight: bold;
+    border-right: 1px solid #ffffff55;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #005b96;
+}
+
+/* Título de servicios */
+.titulo {
+    text-align: center;
+    color: #005b96;
+    margin: 30px 10px;
+}
+
+/* Contenedor de servicios */
+.contenedor-servicios {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Tarjetas */
+.servicio {
+    background-color: white;
+    border: 1px solid #b8dff2;
+    border-radius: 10px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 3px 8px #00000015;
+    transition: 0.3s;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px #00000025;
+}
+
+.servicio h3 {
+    color: #005b96;
+    margin-top: 0;
+}
+
+.servicio p {
+    line-height: 1.6;
+}
+
+.precio {
+    color: #008cba;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Horario */
+.horario {
+    background-color: white;
+    width: 90%;
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border-top: 5px solid #008cba;
+}
+
+.horario h2 {
+    color: #005b96;
+}
+
+/* Pie de página */
+footer {
+    background-color: #005b96;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Adaptación a tabletas */
+@media (max-width: 900px) {
+    .contenedor-servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    .contenedor-servicios {
+        grid-template-columns: 1fr;
+    }
+
+    .menu a {
+        width: 100%;
+        text-align: center;
+    }
+}
