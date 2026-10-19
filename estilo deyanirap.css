@@ -1,0 +1,27 @@
+
+.tabla-ofertas {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabla-ofertas th {
+    background-color: #005b96;
+    color: white;
+    padding: 12px;
+}
+
+.tabla-ofertas td {
+    border: 1px solid #008cba;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-ofertas tr:nth-child(even) {
+    background-color: #eaf8ff;
+}
+
+.tabla-ofertas tr:hover {
+    background-color: #cceeff;
+}
