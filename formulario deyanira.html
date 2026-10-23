@@ -1,121 +1,93 @@
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Pago - Centro de Impresiones</title>
-
-    <link rel="stylesheet" href="estilo deyanira pena.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
-
 <body>
 
-<center>
+    <div class="formulario">
+        <h1>CENTRO DE IMPRESIONES</h1>
+        <h2>Formulario de Pago</h2>
 
-<div class="registro">
+        <form id="formularioPago">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"
+                   placeholder="Ingrese su nombre" required>
 
-    <h1>CENTRO DE IMPRESIONES</h1>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"
+                   placeholder="Ingrese su apellido" required>
 
-    <h2>Formulario de Pago</h2>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo"
+                   placeholder="Ingrese su correo" required>
 
-    <div class="inputBox">
+            <label for="numero">Número de teléfono:</label>
+            <input type="tel" id="numero" name="numero"
+                   placeholder="Ingrese su número" required>
 
-        <p>
-            <label>Nombre</label><br>
-            <input type="text" placeholder="Nombre">
-        </p>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena"
+                   placeholder="Ingrese su contraseña" required>
 
-        <p>
-            <label>Apellido</label><br>
-            <input type="text" placeholder="Apellido">
-        </p>
+            <div class="recordar">
+                <input type="checkbox" id="recordar" name="recordar">
+                <label for="recordar">Recordar contraseña</label>
+            </div>
 
-        <p>
-            <label>Correo</label><br>
-            <input type="email" placeholder="Alguien@email.com">
-        </p>
-
-        <p>
-            <label>Número</label><br>
-            <input type="text" placeholder="809 XXX XXXX">
-        </p>
-
-        <p>
-            <label>Contraseña</label><br>
-            <input type="password" placeholder="Password">
-        </p>
-
-        <p>
-            <label>Recordar contraseña</label><br>
-            <input type="password" placeholder="Password">
-        </p>
-
-        <p>
-            <label for="Sexo">Elija el sexo</label><br>
-
-            <select name="Sexo" id="Sexo">
-
-                <option value="">Elija el sexo</option>
-                <option value="Femenino">Femenino</option>
-                <option value="Masculino">Masculino</option>
-                <option value="No decirlo">Prefiero no decirlo</option>
-
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="otro">Otro</option>
+                <option value="no-indicar">Prefiero no indicarlo</option>
             </select>
-        </p>
 
-        <p>
-            <label for="Edad">Elija la edad</label><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad"
+                   placeholder="Ingrese su edad" min="1" max="120" required>
 
-            <select name="Edad" id="Edad">
+            <h3>Datos de la tarjeta</h3>
 
-                <option value="">Elija la edad</option>
-                <option value="42">42</option>
-                <option value="43">43</option>
-                <option value="44">44</option>
-                <option value="45">45</option>
-                <option value="46">46</option>
-                <option value="47">47</option>
+            <label for="tarjeta">Número de tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta"
+                   placeholder="Número de tarjeta"
+                   inputmode="numeric" autocomplete="cc-number"
+                   maxlength="19" required>
 
-            </select>
-        </p>
+            <label for="vencimiento">Fecha de vencimiento:</label>
+            <input type="month" id="vencimiento" name="vencimiento"
+                   autocomplete="cc-exp" required>
 
-        <p>
-            <label>Número de tarjeta</label><br>
-            <input type="text" placeholder="XXXX XXXX XXXX XXXX">
-        </p>
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" name="cvv"
+                   placeholder="Código de seguridad"
+                   inputmode="numeric" autocomplete="cc-csc"
+                   maxlength="4" required>
 
-        <p>
-            <label>Fecha de vencimiento</label><br>
-            <input type="text" placeholder="MM/AA">
-        </p>
+            <button type="submit" class="mi-boton1">PAGAR</button>
 
-        <p>
-            <label>CVV</label><br>
-            <input type="password" placeholder="CVV">
-        </p>
-
-        <br>
-
-        <a href="Menu.html">
-            <button type="button" class="mi-boton1">
-                Pagar
+            <button type="button" class="mi-boton2"
+                    onclick="window.location.href='Login.html'">
+                USUARIO
             </button>
-        </a>
 
-        <a href="Login.html">
-            <button type="button" class="mi-boton2">
-                Usuario
-            </button>
-        </a>
-
+            <p class="nota">Formulario de demostración académica.
+                No procesa pagos reales.</p>
+        </form>
     </div>
 
-</div>
-
-</center>
+    <script>
+        document.getElementById("formularioPago").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Formulario validado. Esta demostración no procesa pagos reales.");
+        });
+    </script>
 
 </body>
 </html>
-
